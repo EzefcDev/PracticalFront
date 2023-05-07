@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #ddd;
+    font-family: 'Sigmar', cursive;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h2{
+    font-size: 80px;
+}
+
+button{
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #452525 ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Sigmar', cursive;
+}
