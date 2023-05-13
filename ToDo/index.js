@@ -16,15 +16,10 @@ buttonAdd.addEventListener('click',()=>{
             status:false
         })
         let tr = document.createElement('tr')
-        tr.innerHTML = `<th>${id}</th><th>${job}</th><th><input onclick="check(${id})" type="checkbox"></th><th><button onclick="clear(${id})">borrar</button></th>`
+        tr.innerHTML = `<th>${id}</th><th>${job}</th><th><input onclick="check(${id})" type="checkbox"></th><th><button onclick="clearOn(${id})">BORRAR</button></th>`
         list.appendChild(tr)
     }
 })
-
-
-const clear = (id) => {
-    trList[id].classList.add("invisible")
-}
 
 const check = (id) => {
     const newJobs = jobs.filter(item => {
@@ -33,4 +28,8 @@ const check = (id) => {
         }
         return item
     })
+}
+
+const clearOn = (id) => {
+    trList[id].classList.add("invisible")
 }
